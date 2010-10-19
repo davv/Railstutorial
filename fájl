@@ -1,0 +1,1 @@
+rails generate scaffold Legkondi onin:string marka:string almarka:string extrak:string tipus:string hutotelj:string futotelj:string huto_telj_felv:string futo_telj_felv:string eer:string cop:string fut_uzemhatar:string hut_uzemhatar:string ar:string kep:string
