@@ -71,7 +71,7 @@ describe UsersController do
       assigns(:user).should == @user
     end
 
- it "should have the right title" do
+ 		it "should have the right title" do
       get :show, :id => @user
       response.should have_selector("title", :content => @user.name)
     end
@@ -86,6 +86,13 @@ describe UsersController do
       response.should have_selector("h1>img", :class => "gravatar")
     end
 
+  	it "should show the user's microposts" do
+      mp1 = Factory(:micropost, :user => @user, :content => "Foo bar")
+      mp2 = Factory(:micropost, :user => @user, :content => "Baz quux")
+      get :show, :id => @user
+      response.should have_selector("span.content", :content => mp1.content)
+      response.should have_selector("span.content", :content => mp2.content)
+    end
   end
 
 	describe "GET 'new'" do
@@ -304,7 +311,7 @@ describe UsersController do
     describe "as an admin user" do
 
       before(:each) do
-        admin = Factory(:user, :email => "admin@example.com", :admin => true)
+        admin = Factory(:user, :mail => "admin@example.com", :admin => true)
         test_sign_in(admin)
       end
 
