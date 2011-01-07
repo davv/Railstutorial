@@ -1,0 +1,10 @@
+<h1>Köszöntünk a műanyag-mix honlapján</h1>
+<p>
+	<%
+	@v=Termekek.find_all_by_megnev('Szemeteszsárk')
+	@v.each do |x|
+		x.megnev='Szemeteszsák'
+		x.save
+	end
+	%>
+</p>

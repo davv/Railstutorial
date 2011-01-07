@@ -1,0 +1,33 @@
+<h1>Listing termekeks</h1>
+
+<table>
+  <tr>
+    <th>Cikkszam</th>
+    <th>Megnev</th>
+    <th>Tul</th>
+    <th>Leir</th>
+    <th>Egyseg</th>
+    <th>Ar</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @termekeks.each do |termekek| %>
+  <tr>
+    <td><%= termekek.cikkszam %></td>
+    <td><%= termekek.megnev %></td>
+    <td><%= termekek.tul %></td>
+    <td><%= termekek.leir %></td>
+    <td><%= termekek.egyseg %></td>
+    <td><%= termekek.ar %></td>
+    <td><%= link_to 'Show', termekek %></td>
+    <td><%= link_to 'Edit', edit_termekek_path(termekek) %></td>
+    <td><%= link_to 'Destroy', termekek, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Termekek', new_termekek_path %>

@@ -1,0 +1,10 @@
+def prim i
+n=0
+(i/2).times do |w|
+if i%(w+2)==0
+n=1
+end
+end
+return n == 0
+end
+

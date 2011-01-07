@@ -1,0 +1,141 @@
+body {
+	margin:  0;
+	padding: 0;
+	background:#c9cbca;
+	font: 15px Arial;
+	color: #444;
+	text-align:justify;
+}
+
+p {
+	text-align:justify;
+}
+
+p.kisebb {
+	font-size:10px;
+}
+
+a {
+color:#888;
+text-decoration:none;
+}
+
+a:hover {
+color:#000;
+text-decoration:underline;
+}
+
+h1 {
+	font: bold 30px Arial;
+}
+
+h2 {
+	font: bold 25px Arial;
+}
+
+h3 {
+	font: bold 20px Arial;
+}
+
+h4 {
+	font: bold 18px Arial;
+}
+
+h4.left {
+	font: bold 18px Arial;
+	text-align:left;
+}
+
+h1, h2, h3, h4 {
+	text-align: center;
+}
+
+#head {
+	width: 1000px;
+	height: 120px;
+	background: url(../images/mumix_head.jpg);
+}
+
+#oldal {
+	margin-top:0px;
+	width:1000px;
+	background: url(../images/mumix_body.jpg) repeat-y;
+}
+
+#main {
+	width:85%;
+	color: #444;
+}
+
+#vege {
+	width:1000px;
+	height:149px;
+	float:left;
+	background:url(../images/mumix_bottom.jpg) repeat-x;
+}
+
+#menu {
+	float:right;
+	margin-top:45px;
+	margin-right:100px;
+}
+
+#menu ul {
+	padding:10px;
+	float:right;
+	list-style:none;
+  -moz-border-radius:    10px;
+  -webkit-border-radius: 10px;
+  border-radius:         10px;
+  background:#ddd;
+}
+
+#menu li {
+	padding:10px;
+	display:inline;
+	background:#ddd;
+}
+
+#menu a {
+	padding-top:10px;
+	padding-bottom:10px;
+}
+
+#menu li:hover {
+	background:#fff;
+}
+
+a.button {
+	float:left;
+	padding:5px;
+	background:#ddd;
+	padding-top:10px;
+	padding-bottom:10px;
+	-moz-border-radius:    10px;
+  -webkit-border-radius: 10px;
+  border-radius:         10px;
+}
+
+a.button:hover {
+	background:#fff;
+}
+
+
+#menu a:hover {
+	background:#fff;
+}
+
+img.jobb {
+	float:right;
+	margin:10px;
+}
+
+img.bal {
+	float:left;
+	margin:10px;
+}
+
+img {
+	border:0px;
+}
+

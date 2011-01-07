@@ -1,0 +1,13 @@
+<h1><%= params[:m] %></h1>
+<a class="button" href="/pages/products"> vissza </a>
+	<table>
+	
+
+<%
+@termekek.each do |x|
+%>
+	<tr><td><%= x.tul %></td><td><%= x.ar %></td><td></td><tr>
+<%
+end
+%>
+</table>

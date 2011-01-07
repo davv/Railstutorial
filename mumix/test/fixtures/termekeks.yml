@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  cikkszam: MyString
+  megnev: MyString
+  tul: MyString
+  leir: MyText
+  egyseg: MyString
+  ar: 1.5
+
+two:
+  cikkszam: MyString
+  megnev: MyString
+  tul: MyString
+  leir: MyText
+  egyseg: MyString
+  ar: 1.5

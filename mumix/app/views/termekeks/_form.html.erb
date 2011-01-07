@@ -1,0 +1,41 @@
+<%= form_for(@termekek) do |f| %>
+  <% if @termekek.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@termekek.errors.count, "error") %> prohibited this termekek from being saved:</h2>
+
+      <ul>
+      <% @termekek.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :cikkszam %><br />
+    <%= f.text_field :cikkszam %>
+  </div>
+  <div class="field">
+    <%= f.label :megnev %><br />
+    <%= f.text_field :megnev %>
+  </div>
+  <div class="field">
+    <%= f.label :tul %><br />
+    <%= f.text_field :tul %>
+  </div>
+  <div class="field">
+    <%= f.label :leir %><br />
+    <%= f.text_area :leir %>
+  </div>
+  <div class="field">
+    <%= f.label :egyseg %><br />
+    <%= f.text_field :egyseg %>
+  </div>
+  <div class="field">
+    <%= f.label :ar %><br />
+    <%= f.text_field :ar %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

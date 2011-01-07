@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Cikkszam:</b>
+  <%= @termekek.cikkszam %>
+</p>
+
+<p>
+  <b>Megnev:</b>
+  <%= @termekek.megnev %>
+</p>
+
+<p>
+  <b>Tul:</b>
+  <%= @termekek.tul %>
+</p>
+
+<p>
+  <b>Leir:</b>
+  <%= @termekek.leir %>
+</p>
+
+<p>
+  <b>Egyseg:</b>
+  <%= @termekek.egyseg %>
+</p>
+
+<p>
+  <b>Ar:</b>
+  <%= @termekek.ar %>
+</p>
+
+
+<%= link_to 'Edit', edit_termekek_path(@termekek) %> |
+<%= link_to 'Back', termekeks_path %>
