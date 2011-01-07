@@ -68,7 +68,7 @@ describe MicropostsController do
 
       before(:each) do
         @user = Factory(:user)
-        wrong_user = Factory(:user, :email => Factory.next(:email))
+        wrong_user = Factory(:user, :mail => Factory.next(:mail))
         test_sign_in(wrong_user)
         @micropost = Factory(:micropost, :user => @user)
       end
