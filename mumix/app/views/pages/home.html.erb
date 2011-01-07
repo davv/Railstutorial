@@ -1,10 +1,15 @@
-<h1>Köszöntünk a műanyag-mix honlapján</h1>
+<h1>Terméklista</h1>
 <p>
-	<%
-	@v=Termekek.find_all_by_megnev('Szemeteszsárk')
-	@v.each do |x|
-		x.megnev='Szemeteszsák'
-		x.save
+
+<%
+	@i=0
+ 	@termekek.each do |x|%>
+		<a href="termekmut?id=<%= x.id %>"><%= x.megnev %></a><br>
+		<%
+		@i=@i+1
 	end
-	%>
+%>
+</td>
+</tr>
+</table>
 </p>

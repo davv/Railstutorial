@@ -1,13 +1,15 @@
 Mumix::Application.routes.draw do
+  resources :leirasoks
+
   resources :termekeks
 
   get "pages/home"
 
-  get "pages/products"
+  get "pages/head"
 
-  get "pages/contact"
-  
   get "pages/termekmut"
+  
+  root :to => '/pages#home'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

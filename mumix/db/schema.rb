@@ -10,7 +10,18 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101029143410) do
+ActiveRecord::Schema.define(:version => 20101214121845) do
+
+  create_table "leirasoks", :force => true do |t|
+    t.string   "megnev"
+    t.text     "leiras"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "felh"
+    t.text     "felhtex"
+    t.text     "leirtex"
+    t.string   "kep"
+  end
 
   create_table "termekeks", :force => true do |t|
     t.string   "cikkszam"

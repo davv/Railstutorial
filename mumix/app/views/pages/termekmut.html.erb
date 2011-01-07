@@ -1,13 +1,15 @@
-<h1><%= params[:m] %></h1>
-<a class="button" href="/pages/products"> vissza </a>
-	<table>
-	
+<a class="button" href="/pages/home"> vissza </a>
+<h1><%=@termek.megnev%></h1>
+<%if @termek.kep%><img width="300px" src="/images/termnagy/<%=@termek.kep%>"><%end%>
+<p><%@termek.leirtex.lines.to_a.each do |x|%>
+	<%=x%><br>
+<%end%>
+</p>
+<%if @termek.felh and @termek.felh != ""%>
+	<p><b>Felhasználási javaslat:</b><br />
+	<%@termek.felhtex.to_a.each do |x|%>
 
-<%
-@termekek.each do |x|
-%>
-	<tr><td><%= x.tul %></td><td><%= x.ar %></td><td></td><tr>
-<%
-end
-%>
-</table>
+		<%=x%><br>
+	<%end%>
+<%end%>
+</p>

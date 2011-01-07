@@ -1,22 +1,15 @@
 body {
 	margin:  0;
 	padding: 0;
-	background:#c9cbca;
-	font: 15px Arial;
-	color: #444;
-	text-align:justify;
+	background:#444;
 }
 
 p {
 	text-align:justify;
 }
 
-p.kisebb {
-	font-size:10px;
-}
-
 a {
-color:#888;
+color:#444;
 text-decoration:none;
 }
 
@@ -25,101 +18,51 @@ color:#000;
 text-decoration:underline;
 }
 
-h1 {
-	font: bold 30px Arial;
-}
-
-h2 {
-	font: bold 25px Arial;
-}
-
-h3 {
-	font: bold 20px Arial;
-}
-
-h4 {
-	font: bold 18px Arial;
-}
-
-h4.left {
-	font: bold 18px Arial;
-	text-align:left;
-}
-
-h1, h2, h3, h4 {
-	text-align: center;
-}
+h1 {	font: bold 30px Arial;} h2 {	font: bold 25px Arial; }h3 {	font: bold 20px Arial;}h4 {	font: bold 18px Arial;} h1, h2, h3, h4 {	text-align: center;}
 
 #head {
-	width: 1000px;
-	height: 120px;
-	background: url(../images/mumix_head.jpg);
+	margin-top:20px;
+	width: 99%;
+	height: 150px;
+	background: #dff;
+	-moz-border-radius:    30px;
+  -webkit-border-radius: 30px;
+  border-radius:         30px;
+  border:1px solid #777;
 }
 
 #oldal {
-	margin-top:0px;
-	width:1000px;
-	background: url(../images/mumix_body.jpg) repeat-y;
+	margin-top:20px;
+	font-size:30px;
+	width:99%;
+	background: #dff;
+	-moz-border-radius:    30px;
+  -webkit-border-radius: 30px;
+  border-radius:         30px;
+  border:1px solid #777;
 }
 
-#main {
-	width:85%;
-	color: #444;
-}
-
-#vege {
-	width:1000px;
-	height:149px;
-	float:left;
-	background:url(../images/mumix_bottom.jpg) repeat-x;
-}
-
-#menu {
-	float:right;
-	margin-top:45px;
-	margin-right:100px;
-}
-
-#menu ul {
-	padding:10px;
-	float:right;
-	list-style:none;
-  -moz-border-radius:    10px;
-  -webkit-border-radius: 10px;
-  border-radius:         10px;
-  background:#ddd;
-}
-
-#menu li {
-	padding:10px;
-	display:inline;
-	background:#ddd;
-}
-
-#menu a {
-	padding-top:10px;
-	padding-bottom:10px;
-}
-
-#menu li:hover {
-	background:#fff;
+#oldal p {
+	margin-left:1%;
+	margin-right:1%;
 }
 
 a.button {
 	float:left;
+	margin:5px;
 	padding:5px;
 	background:#ddd;
-	padding-top:10px;
+	padding-top:1px;
 	padding-bottom:10px;
 	-moz-border-radius:    10px;
   -webkit-border-radius: 10px;
   border-radius:         10px;
+  border:1px solid #777;
 }
 
 a.button:hover {
 	background:#fff;
 }
-
 
 #menu a:hover {
 	background:#fff;
