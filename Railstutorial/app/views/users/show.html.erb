@@ -16,6 +16,19 @@
       <strong>Name</strong> <%= @user.name %><br />
       <strong>URL</strong> <%= link_to user_path(@user), @user %><br />
       <strong>Microposts</strong> <%= @user.microposts.count %>
+      <% unless @user.adresses.empty? %>
+      	<br>
+      	<table class="adress" summary="User adresses">
+      		<% @adresses.each do |adress| %>
+      			 <%= link_to adress.adress, "/adresses/" + adress.id.to_s %><br>
+      		<%end%>
+        </table>
+      <%end%>
+      <br>
+      New adress:
+      <%=form_tag "/adresses/create"%>
+	      <%=text_field_tag "adress"%>	
+      <%submit_tag 'Create adress'%>
     </td>
   </tr>
 </table>

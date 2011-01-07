@@ -4,7 +4,8 @@ class User < ActiveRecord::Base
   email_regex = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
 
 	has_many :microposts, :dependent => :destroy
-
+	has_many :adresses, :dependent => :destroy
+	
   validates :name,  :presence => true,
                     :length   => { :maximum => 50 }
   validates :mail,  :presence => true,

@@ -1,5 +1,7 @@
 Railstut::Application.routes.draw do
 
+  resources :adresses
+
   resources :users
   resources :sessions,   :only => [:new, :create, :destroy]
   resources :microposts, :only => [:create, :destroy]
@@ -14,6 +16,7 @@ Railstut::Application.routes.draw do
   get "sessions/new"
   get "users/new"
 
+	post "adresses/create"
   root :to => 'pages#home'
   
   # The priority is based upon order of creation:
